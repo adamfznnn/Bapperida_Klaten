@@ -1,0 +1,40 @@
+/* css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  width: 460px;
+}
+h2 { margin-top:0; }
+input[type="text"], input[type="password"], input[type="date"] {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #2b7cff;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+}
+button:hover { opacity: 0.95; }
+.error { color: #b00020; background: #ffecec; padding: 8px; border-radius: 4px; }
+.info { color: #006600; background: #eaffea; padding: 8px; border-radius: 4px; }
+table th { background:#f0f0f0; }
+a { color:#2b7cff; text-decoration: none; }
