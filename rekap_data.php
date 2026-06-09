@@ -32,7 +32,7 @@ while ($p = mysqli_fetch_assoc($qPeg)) {
     $tgl = "$tahun-$bulan-".str_pad($d,2,'0',STR_PAD_LEFT);
 
     $cek = mysqli_query($conn,"
-      SELECT 1 FROM sppd_detail
+      SELECT 1 FROM sppd_personel
       WHERE id_peg='$p[id_peg]'
       AND '$tgl' BETWEEN tgl_pergi AND tgl_pulang
     ");
