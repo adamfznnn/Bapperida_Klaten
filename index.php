@@ -59,6 +59,8 @@ include 'koneksi.php';
                     Cari Data</a>
                 <a href="list_pegawai.php" class="btn btn-outline-light btn-sm fw-bold"><i class="fas fa-list me-1"></i>
                     List Pegawai</a>
+                <a href="rekap.php" class="btn btn-outline-warning btn-sm fw-bold"><i class="fas fa-table me-1"></i>
+                    Rekap</a>
                 <a href="logout.php" class="btn btn-outline-danger btn-sm fw-bold"><i
                         class="fas fa-sign-out-alt me-1"></i> Logout</a>
             </div>
