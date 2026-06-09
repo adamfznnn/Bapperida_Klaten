@@ -97,7 +97,9 @@ const searchInput = document.getElementById('search');
 const rekapData = document.getElementById('rekap-data');
 
 function loadData(keyword = '') {
-  fetch(`rekap_data.php?bulan=<?= $bulan ?>&tahun=<?= $tahun ?>&q=${encodeURIComponent(keyword)}`)
+  const bulan = document.querySelector('select[name="bulan"]').value;
+  const tahun = document.querySelector('input[name="tahun"]').value;
+  fetch(`rekap_data.php?bulan=${bulan}&tahun=${tahun}&q=${encodeURIComponent(keyword)}`)
     .then(res => res.text())
     .then(html => rekapData.innerHTML = html);
 }
